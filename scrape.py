@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 
-url = 'https://www.imdb.com/?mode=desktop&ref_=m_ft_dsk'
+url = 'https://www.billboard.com/charts/hot-100'
 
 
 request = requests.get(url)
