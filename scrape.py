@@ -2,15 +2,14 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 
-url = 'https://www.imdb.com/?mode=desktop&ref_=m_ft_dsk'
-
+url = 'http://www.todaytvseries2.com/'
 
 request = requests.get(url)
 
 page = bs(request.content, 'html.parser')
 print(page.prettify())
 
-file_name = 'imdb.html'
+file_name = 'today_tv_series.html'
 
 with open(file_name, 'w') as f:
     f.write(page.prettify())
